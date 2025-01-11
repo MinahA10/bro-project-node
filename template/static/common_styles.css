@@ -1,0 +1,252 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(247, 245, 255);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+    width: max-content;
+}
+input.light,select.light{
+    min-width: 100px;
+    min-height: 20px;
+    width: 300px;
+    margin: 5px;
+    border: hidden;
+    background-color: transparent;
+    border-bottom: solid thin rgb(151, 151, 151);
+    font-weight: 500;
+    padding: 10px;
+}
+input:focus{
+    outline: none;
+    border-bottom: solid thin rgb(30, 30, 30);
+}
+button{
+    background-color: rgb(0, 57, 132);
+    min-width: 100px;
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+    border: hidden;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: white;
+    color: rgb(0, 57, 132);
+    border: solid thin rgb(0, 57, 132);
+}
+main{
+    width: 75%;
+}
+.bar{
+    display: flex;
+    align-items: center;
+}
+.glassy{
+    /* box-shadow: inset 0 0 2000px rgba(255, 255,255, .5); */
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.575);
+}
+.glassy-dark{
+    /* box-shadow: inset 0 0 2000px rgba(255, 255,255, .5); */
+    backdrop-filter: blur(10px);
+    background-color: rgba(36, 36, 36, 0.618);
+}
+.side-div{
+    width: 25%;
+    position: relative;
+    top: 0;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    width: max-content;
+}
+.divider{
+    width: 90%;
+    color: rgb(194, 194, 194);
+    height: 2px;
+}
+label{
+    font-weight: 500;
+}
+.card{
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: max-content;
+    margin: 5px;
+    border: hidden;
+    border-radius: 10px;
+}
+.container-with-x,.container-with-x-broken{
+    background-color: rgb(18, 18, 73);
+    color: white;
+    border: hidden;
+    padding: 3px;
+    border-radius: 3px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+.container-with-x>p,.container-with-x-broken>p{
+    margin-left: 15px;
+}
+tr,td{
+    border-bottom: solid thin rgba(68, 68, 68, 0.547);
+}
+td{
+    padding: 10px;
+}
+svg{
+    margin-left: 10px;
+}
+thead>tr>td{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.light-control>.light-mode,.dark-control>.dark-mode{
+    display: none;
+}
+.ItemEditable{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.ItemEditable:focus{
+    border-bottom: solid thin;
+}
+.hls-progress-cont{
+    position: fixed;
+    top: 80px;
+    right: 50px;
+    padding: 10px;
+    border: hidden;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 500px;
+    z-index: 30;
+}
+.progress-box{
+    padding: 10px;
+    border-bottom: solid rgb(145, 145, 145) thin;
+}
+.progress-title{
+    font-weight: 600;
+}
+/* .progress-slug{} */
+.barr{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+.progress-bar-container{
+    height: 5px;
+    background-color: rgb(225, 225, 225);
+    border: hidden;
+    border-radius: 50px;
+    width: 100%;
+    position: relative;
+}
+.progress-bar{
+    height: 5px;
+    border: hidden;
+    border-radius: 50px;
+    position: absolute;
+}
+.source-chooser{
+    border: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    padding: 10px;
+    z-index: 5000000;
+    background-color: white;
+}
+/* The outer container for the switch */
+.switch { 
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* The hidden checkbox input */
+  .switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The visible slider (background) of the switch */
+  .switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border:hidden;
+    border-radius: 25px;
+  }
+  
+  /* The circle (slider button) inside the switch */
+  .switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border: hidden;
+    border-radius: 50%;
+  }
+  
+  /* Pseudo-class that styles the switch when the checkbox is checked */
+  .switch-input:checked + .switch-slider {
+    background-color: rgb(0, 57, 132);
+  }
+  
+  /* Moves the slider button to the right when the switch is checked */
+  .switch-input:checked + .switch-slider:before {
+    transform: translateX(26px);
+  }
+  
+/* .percent{} */
+@media screen and (max-width:800px) {
+    .side-div{
+        left: 10px;
+        position: fixed;
+        top: 50px;
+        border-radius: 20px;
+        height: max-content;
+        z-index: 20;
+    }
+    main{
+        width: 100vw;
+        padding-left: 20px;
+    }
+}
